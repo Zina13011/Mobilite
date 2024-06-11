@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.logo1 img{
+    display: block;
+    margin: auto;
+    width: 50%; 
+    margin-top:50%;
+}
+
+.logo2 img{
+    display: block;
+    margin: auto;
+    margin-top:80%;
+    width: 50%;
+}
+
+.dino{
+    margin-top: 40%;
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+    margin-left: 30px;
+    color: rgb(124, 120, 120);
+}
+
+
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"], input[type="date"], input[type="time"], input[type="number"] {
+        width: calc(100% - 10px);
+    }
+}
+
+@media (min-width: 450px) {
+    .parent {
+        display: none;
+    }
+
+    .dino{
+        display: block;
+    }
+}
+
+@media screen and (min-width : 772px) {
+    header img {
+        width: 50px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 35px;
+    }
+}
+
+/*  ici les regles de styles pour les tablets */
+@media screen and (min-width : 992px) {
+    header img {
+        width: 77px;
+    }
+}

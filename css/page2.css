@@ -1,0 +1,814 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+.button-back-button {
+    background-color: #04db0b00;
+    color: #020202;
+    cursor: alias;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position: relative;
+    top: 55px;
+    right: 490px;
+}
+
+.button-back-button img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+
+h2 {
+    margin-top: 50px;
+    left: 550px;
+    gap: 50px;
+}
+
+.button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+header {
+    background: rgb(224, 62, 30);
+    background: linear-gradient(266deg, rgb(255, 81, 0) 60%, rgba(255, 138, 39, 1) 100%);
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+}
+
+header .logo img {
+    width: 10px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+header .menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    transform: rotate(-90deg)
+}
+
+header .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+header .dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header .dropdown-menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+header .dropdown-menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+header .dropdown-menu ul li:hover {
+    background-color: #f4f4f4;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-btn {
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    right: 1000px;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50%;
+}
+
+.no-title {
+    color: rgb(53, 47, 47);
+    font-weight: 100px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.buy-tickets {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: rgb(224, 62, 30);
+    background: linear-gradient(266deg, rgba(255, 38, 0, 0.911) 60%, rgb(255, 39, 39) 100%);
+    color: white;
+    padding: 14px 110px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.UnVoyage {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.img {
+    margin-left: 20px;
+}
+
+.UnVoyage img {
+    margin-right: 20px;
+}
+
+.Ajouter {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 15px;
+    gap: 3px;
+}
+
+.toto {
+    position: relative;
+    top: 25px;
+    right: 47px;
+    background-color: rgb(230, 228, 228);
+    width: 50px;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 20%;
+    border-bottom: #020202;
+}
+
+.toto10 {
+    position: relative;
+    top: 25px;
+    right: 47px;
+    background-color: rgb(230, 228, 228);
+    width: 50px;
+    text-align: center;
+    margin-top: auto;
+    border-radius: 20%;
+    border-bottom: #020202;
+}
+
+hr {
+    color: #f3ededc4;
+    margin-top: -20px;
+}
+
+#btnPlus1 {
+    font-size: 20px;
+    color: #f4f4f4;
+    background-color: orangered;
+    border: none;
+    border-radius: 50%;
+    height: 50%;
+    width: 20px;
+    gap: 60px;
+}
+
+#btnPlus10 {
+    font-size: 20px;
+    color: #f4f4f4;
+    background-color: orangered;
+    border: none;
+    border-radius: 50%;
+    height: 50%;
+    width: 20px;
+    gap: 60px;
+}
+
+#btnMoins1 {
+    font-size: 20px;
+    color: #030303;
+    border-radius: #020202;
+    background-color: rgb(247, 240, 237);
+    border-radius: 50%;
+    height: 50%;
+    width: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+#btnMoins10 {
+    font-size: 20px;
+    color: #030303;
+    border-radius: #020202;
+    background-color: rgb(247, 240, 237);
+    border-radius: 50%;
+    height: 50%;
+    width: 20px;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.UnVoyage h1 {
+    font-size: 15px;
+    margin-left: -60px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.UnVoyage .p {
+    font-size: 15px;
+    margin-left: -285px;
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.DixVoyages .p {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.DixVoyages img {
+    margin-right: 20px;
+}
+
+.DixVoyages h1 {
+    font-size: 1px;
+    margin-bottom: 60px;
+}
+
+.Acheter {
+    display: none;
+}
+
+.DixVoyages img {
+    display: block;
+    justify-content: left;
+    size: 50%;
+
+}
+
+.total {
+
+    color: rgb(5, 5, 5);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    display: flex;
+    height: 15px;
+    margin-left: 53%;
+    margin-top: 150px;
+    padding: 5px;
+    text-align: center;
+    font-weight: normal;
+    border: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(177, 173, 173, 0.349);
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    top: 80%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+h4 {
+    position: fixed;
+    right: 90px;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+#buyButton {
+    display: block;
+    justify-content: center;
+    margin-top: 65px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: rgb(233, 54, 41);
+    color: aliceblue;
+    padding: 20px;
+    width: 95%;
+
+
+}
+
+.fermerPopup {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.acheter {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 100px 200px;
+    border: none;
+
+}
+
+.section-paiement {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 100px 200px;
+    border: none;
+
+}
+
+h5 {
+    text-align: center;
+    font-size: 30px;
+    background: rgb(224, 62, 30);
+    background: linear-gradient(266deg, rgb(255, 81, 0) 60%, rgba(255, 138, 39, 1) 100%);
+    font-weight: normal;
+    padding: 10px 20px;
+    color: white;
+
+}
+
+.Paiement {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 100px 200px;
+    border: none;
+
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+footer {
+    background-color: #ffffff;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer nav ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    color: #8d8787;
+}
+
+footer nav ul li img {
+    width: 34px;
+    height: 34px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#pay-button {
+    position: relative;
+    left: 250px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 260px;
+    height: 70px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 26px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#main-content {
+    background-color: #e0dcdc20;
+}
+
+#main-content h1 {
+    background: rgb(224, 62, 30);
+    background: linear-gradient(266deg, rgb(255, 81, 0) 60%, rgba(255, 138, 39, 1) 100%);
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#main-content img {
+    display: block;
+    right: 100px;
+}
+
+#main-content button.FR {
+    position: absolute;
+    top: 480px;
+    right: 0;
+    margin-right: 30px;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    width: auto;
+    background-color: rgba(92, 80, 80, 0.886);
+    font-weight: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+
+}
+
+#main-content p {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: #8d8787;
+    margin-top: 20px;
+    padding: 25px;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+
+}
+
+#main-content .pay-button {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f4f4;
+    color: #8d8787;
+    padding: 15px;
+    width: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+
+}
+
+form {
+    display: block;
+    text-align: left;
+    color: #8d8787;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: 200px;
+    margin-bottom: 15px;
+
+}
+
+form .largey-input {
+    display: block;
+    text-align: left;
+    width: 450px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 3px solid rgba(8, 8, 8, 0.09);
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+form .small-input {
+    display: block;
+    width: 240px;
+    text-align: left;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 3px solid rgba(8, 8, 8, 0.09);
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form .small-inputy {
+    display: block;
+    width: 240px;
+    text-align: left;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 3px solid rgba(8, 8, 8, 0.09);
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+form .smally-input {
+    display: block;
+    text-align: left;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 3px solid rgba(8, 8, 8, 0.09);
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: block;
+    /* Ajout de la largeur totale pour les inputs */
+    text-align: left;
+}
+
+form .smallx-input {
+    width: 100px;
+    display: block;
+    /* Ajout de la largeur totale pour les inputs */
+    text-align: left;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    border: 3px solid rgba(8, 8, 8, 0.09);
+    padding: 20px;
+    margin-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* Largeur pour les autres champs */
+}
+
+.expiry-date {
+    display: flex;
+    gap: 60px;
+    border-radius: 10px;
+    color: #2a2828;
+    /* Espacement entre les champs mois et année */
+}
+
+#pay-button {
+    background-color: #007bff;
+    width: 400px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.img-paiement {
+    width: 380px;
+    height: 80px;
+    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 259px;
+    background-color: white;
+    margin-bottom: 50px;
+    border: none;
+
+}
+
+.img-cb {
+    padding: 850px;
+    position: absolute;
+    top: calc(65% - 0px);
+    margin-right: 55px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.img-inter {
+    padding: 650px;
+    position: absolute;
+    top: calc(65% - 0px);
+    margin-right: 755px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+button.annuler{
+    position: relative;;
+    left: 800px;
+    color: #2a2828;
+    font-weight: none;
+    background-color: rgba(128, 128, 128, 0);
+}
+    
+
+#footer .button {
+    padding: 650px;
+    position: absolute;
+    top: calc(65% - 0px);
+    margin-right: 755px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+
+#bas {
+    display: flex;
+    top: 20px;
+    border: none;
+    border-radius: 0;
+    color: #020202;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+
+}
+.pay {
+    width: 780px;
+    height: 100px;
+    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-left: 259px;
+    background-color: rgba(128, 128, 128, 0.048);
+    margin-bottom: 50px;
+    border: none;
+
+}
+
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header .logo img {
+        margin: 0 auto 10px;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="time"],
+    input[type="number"] {
+        width: calc(100% - 10px);
+    }
+}
+
+.img-cb {
+    padding: 650px;
+    position: absolute;
+    top: calc(65% - 0px);
+    margin-right: 855px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+
+/*  ici les regles de styles pour les tablets */
+
+@media screen and (min-width : 772px) {
+    header img {
+        width: 40px;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    header h2 {
+        font-size: 35px;
+    }
+}
+
+/*  ici les regles de styles pour les tablets */
+@media screen and (min-width : 992px) {
+    header img {
+        width: 77px;
+    }
+}
